@@ -12,9 +12,16 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.FrameLayout;
+
+import com.volianskyi.taras.reservationapplication.fragments.AboutCompany;
+import com.volianskyi.taras.reservationapplication.fragments.OnlineReservation;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private FrameLayout frameLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +47,14 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        initView();
+    }
+
+    private void initView() {
+            frameLayout = (FrameLayout) findViewById(R.id.flMainActivity);
+
+
     }
 
     @Override
@@ -80,17 +95,17 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_online_reservation) {
+            OnlineReservation onlineReservation = new OnlineReservation();
+            getSupportFragmentManager().beginTransaction().add(R.id.flMainActivity, onlineReservation, "onlineReservation").commit();
+        } else if (id == R.id.nav_about_company) {
+            AboutCompany aboutCompany = new AboutCompany();
+            getSupportFragmentManager().beginTransaction().add(R.id.flMainActivity, aboutCompany, "aboutCompany").commit();
+        } else if (id == R.id.nav_my_cabinet) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_change_language) {
 
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_change_office) {
 
         }
 

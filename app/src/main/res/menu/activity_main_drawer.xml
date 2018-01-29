@@ -5,23 +5,23 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_online_reservation"
             android:icon="@drawable/ic_menu_camera"
             android:title="Online-reservation" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_about_company"
             android:icon="@drawable/ic_menu_gallery"
             android:title="About company" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_my_cabinet"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="My cabinet" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_change_language"
             android:icon="@drawable/ic_menu_manage"
             android:title="Change language" />
         <item
-            android:id="@+id/nav_manage2"
+            android:id="@+id/nav_change_office"
             android:icon="@drawable/ic_menu_manage"
             android:title="Change office" />
     </group>

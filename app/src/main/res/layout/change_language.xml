@@ -2,11 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    android:orientation="vertical">
 
     <TextView
-        android:text="@string/app_name_about_comp_text"
+        android:text="Languages:"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
