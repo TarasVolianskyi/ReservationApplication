@@ -6,19 +6,19 @@
     android:background="#FFFFFF">
 
     <Button
-        android:id="@+id/employeeOnlineReservationLayout"
+        android:id="@+id/btnEmployeeOnlineReservationLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="employee"/>
 
     <Button
-        android:id="@+id/serviceOnlineReservationLayout"
+        android:id="@+id/btnOptionOnlineReservationLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="service"/>
+        android:text="option"/>
 
     <Button
-        android:id="@+id/dateAndTimeOnlineReservationLayout"
+        android:id="@+id/btnDateAndTimeOnlineReservationLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="date and time"/>

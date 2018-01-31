@@ -16,6 +16,8 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 
 import com.volianskyi.taras.reservationapplication.fragments.AboutCompany;
+import com.volianskyi.taras.reservationapplication.fragments.ChangeLanguage;
+import com.volianskyi.taras.reservationapplication.fragments.ChangeOffice;
 import com.volianskyi.taras.reservationapplication.fragments.OnlineReservation;
 
 public class MainActivity extends AppCompatActivity
@@ -52,7 +54,7 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void initView() {
-            frameLayout = (FrameLayout) findViewById(R.id.flMainActivity);
+        frameLayout = (FrameLayout) findViewById(R.id.flMainActivity);
 
 
     }
@@ -104,9 +106,11 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_my_cabinet) {
 
         } else if (id == R.id.nav_change_language) {
-
+            ChangeLanguage changeLanguage = new ChangeLanguage();
+            getSupportFragmentManager().beginTransaction().add(R.id.flMainActivity, changeLanguage, "aboutCompany").commit();
         } else if (id == R.id.nav_change_office) {
-
+            ChangeOffice changeOffice = new ChangeOffice();
+            getSupportFragmentManager().beginTransaction().add(R.id.flMainActivity, changeOffice, "aboutCompany").commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
