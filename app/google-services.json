@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "475891075679",
+    "firebase_url": "https://reservationaplication.firebaseio.com",
+    "project_id": "reservationaplication",
+    "storage_bucket": "reservationaplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475891075679:android:932fae536dd1b55c",
+        "android_client_info": {
+          "package_name": "com.volianskyi.taras.reservationapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "475891075679-7djj3t0a6m9716ejh2o0p77e0ic333s5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.volianskyi.taras.reservationapplication",
+            "certificate_hash": "61ea08e0c06e544e8eda032b940441fb90972db0"
+          }
+        },
+        {
+          "client_id": "475891075679-m86ejmuk8i8ud1jfbqu1kink5e9354r3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQiNHzCYk2ClDdV-iwimrc_AqBXlzFJCs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "475891075679-m86ejmuk8i8ud1jfbqu1kink5e9354r3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

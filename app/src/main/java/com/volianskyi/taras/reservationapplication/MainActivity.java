@@ -3,6 +3,7 @@ package com.volianskyi.taras.reservationapplication;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -16,12 +17,13 @@ import android.widget.Button;
 import android.widget.FrameLayout;
 
 import com.volianskyi.taras.reservationapplication.fragments.AboutCompany;
+import com.volianskyi.taras.reservationapplication.fragments.CalendarForReservation;
 import com.volianskyi.taras.reservationapplication.fragments.ChangeLanguage;
 import com.volianskyi.taras.reservationapplication.fragments.ChangeOffice;
+import com.volianskyi.taras.reservationapplication.fragments.FragmentsInterface;
 import com.volianskyi.taras.reservationapplication.fragments.OnlineReservation;
 
-public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, FragmentsInterface {
 
     private FrameLayout frameLayout;
 
@@ -117,4 +119,16 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    @Override
+    public void goToCalendar() {
+        android.support.v4.app.Fragment fragment = null;
+
+        fragment = new CalendarForReservation();
+
+
+        getSupportFragmentManager().beginTransaction().replace(R.id.flMainActivity, fragment, "goToCalendar").commit();
+
+    }
 }
+

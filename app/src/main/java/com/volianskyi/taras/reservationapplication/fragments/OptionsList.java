@@ -1,25 +1,22 @@
 package com.volianskyi.taras.reservationapplication.fragments;
 
-import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.FrameLayout;
-import android.widget.Toast;
+import android.widget.ListView;
 
-import com.volianskyi.taras.reservationapplication.MainActivity;
 import com.volianskyi.taras.reservationapplication.R;
 
 /**
- * Created by tarasvolianskyi on 29.01.18.
+ * Created by tarasvolianskyi on 03.02.18.
  */
 
-public class OnlineReservation extends Fragment implements View.OnClickListener {
+public class OptionsList extends Fragment  {
     View view;
 
+    /*
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -27,23 +24,40 @@ public class OnlineReservation extends Fragment implements View.OnClickListener 
         initView();
         return view;
     }
+    */
 
-    private void initView() {
+   /* private void intiView() {
         Button btnEmployee = (Button) view.findViewById(R.id.btnEmployeeOnlineReservationLayout);
         Button btnOption = (Button) view.findViewById(R.id.btnOptionOnlineReservationLayout);
         Button btnDateAndTime = (Button) view.findViewById(R.id.btnDateAndTimeOnlineReservationLayout);
         btnEmployee.setOnClickListener(this);
         btnOption.setOnClickListener(this);
         btnDateAndTime.setOnClickListener(this);
+    }*/
+
+
+
+
+
+
+
+/*
+    private void initView() {
+        ListView listItemsCatalog = (ListView) view.findViewById(R.id.lvOptionsList);
+        ArrayList<Item> arrayList = new ArrayList<>();
+
+        for (int i = 0; i < 17; i++) {
+            Item newItem = new Item();
+            newItem.setId(i);
+            newItem.setName("Product - " + i);
+            newItem.setPrice("Prise - " + i * 70);
+            newItem.setPrevoiusPrice("Previous price - " + i * 90);
+            arrayList.add(newItem);
+        }
+        MyAdapter myAdapter = new MyAdapter(arrayList, this);
+        listItemsCatalog.setAdapter(myAdapter);
     }
 
-    @Override
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.btnDateAndTimeOnlineReservationLayout:
-                Toast.makeText(getActivity(), "Click on next", Toast.LENGTH_SHORT).show();
-                ((MainActivity) getActivity()).goToCalendar();
-                break;
-        }
-    }
+*/
+
 }
