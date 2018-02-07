@@ -21,6 +21,7 @@ import com.volianskyi.taras.reservationapplication.fragments.CalendarForReservat
 import com.volianskyi.taras.reservationapplication.fragments.ChangeLanguage;
 import com.volianskyi.taras.reservationapplication.fragments.ChangeOffice;
 import com.volianskyi.taras.reservationapplication.fragments.FragmentsInterface;
+import com.volianskyi.taras.reservationapplication.fragments.Login;
 import com.volianskyi.taras.reservationapplication.fragments.OnlineReservation;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, FragmentsInterface {
@@ -106,7 +107,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             AboutCompany aboutCompany = new AboutCompany();
             getSupportFragmentManager().beginTransaction().add(R.id.flMainActivity, aboutCompany, "aboutCompany").commit();
         } else if (id == R.id.nav_my_cabinet) {
-
+            Login login = new Login();
+            getSupportFragmentManager().beginTransaction().add(R.id.flMainActivity, login, "aboutCompany").commit();
         } else if (id == R.id.nav_change_language) {
             ChangeLanguage changeLanguage = new ChangeLanguage();
             getSupportFragmentManager().beginTransaction().add(R.id.flMainActivity, changeLanguage, "aboutCompany").commit();
