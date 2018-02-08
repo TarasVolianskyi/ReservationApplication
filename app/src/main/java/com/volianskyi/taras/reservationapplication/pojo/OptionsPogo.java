@@ -5,13 +5,16 @@ package com.volianskyi.taras.reservationapplication.pojo;
  */
 
 public class OptionsPogo {
+    private String nameOfOption;
+    private int priceOfOption;
+
+    public OptionsPogo() {
+    }
+
     public OptionsPogo(String nameOfOption, int priceOfOption) {
         this.nameOfOption = nameOfOption;
         this.priceOfOption = priceOfOption;
     }
-
-    private String nameOfOption;
-    private int priceOfOption;
 
     public String getNameOfOption() {
         return nameOfOption;

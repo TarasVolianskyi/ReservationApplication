@@ -1,31 +1,24 @@
 package com.volianskyi.taras.reservationapplication.pojo;
 
+import android.support.v7.app.AppCompatActivity;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+
 /**
  * Created by tarasvolianskyi on 05.02.18.
  */
 
-public class DBHelper {
-    private String name;
-    private String lastName;
+public class DBHelper extends AppCompatActivity {
 
-    public DBHelper(String name, String lastName) {
-        this.name = name;
-        this.lastName = lastName;
-    }
 
-    public String getName() {
-        return name;
-    }
+    /*
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
+    DatabaseReference myRef = database.getReference("message");
+    myRef.setValue("Hello, World!")
+    */
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public String getLastName() {
-        return lastName;
-    }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
 }

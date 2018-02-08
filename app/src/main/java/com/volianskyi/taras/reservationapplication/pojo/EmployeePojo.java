@@ -9,6 +9,14 @@ public class EmployeePojo {
     private String nameOfEmployee;
     private String optionsOfEmployee;
 
+    public EmployeePojo() {
+    }
+
+    public EmployeePojo(String nameOfEmployee, String optionsOfEmployee) {
+        this.nameOfEmployee = nameOfEmployee;
+        this.optionsOfEmployee = optionsOfEmployee;
+    }
+
     public String getNameOfEmployee() {
         return nameOfEmployee;
     }
