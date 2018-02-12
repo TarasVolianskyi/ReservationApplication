@@ -11,14 +11,9 @@ import com.google.firebase.database.FirebaseDatabase;
  */
 
 public class DBHelper extends AppCompatActivity {
-
-
     /*
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference("message");
     myRef.setValue("Hello, World!")
     */
-
-
-
 }
