@@ -13,4 +13,8 @@ public class Dialog {
 
     private Dialog() {
     }
+
+    public static Dialog getOurInstance() {
+        return ourInstance;
+    }
 }
