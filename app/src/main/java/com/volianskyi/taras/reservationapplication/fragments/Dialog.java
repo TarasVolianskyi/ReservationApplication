@@ -6,7 +6,7 @@ package com.volianskyi.taras.reservationapplication.fragments;
 
 public class Dialog {
     private static final Dialog ourInstance = new Dialog();
-
+String name;
     public static Dialog getInstance() {
         return ourInstance;
     }
@@ -16,6 +16,14 @@ public class Dialog {
 
     public static Dialog getOurInstance() {
         return ourInstance;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     @Override
