@@ -17,4 +17,9 @@ public class Dialog {
     public static Dialog getOurInstance() {
         return ourInstance;
     }
+
+    @Override
+    public String toString() {
+        return "Dialog{}";
+    }
 }
