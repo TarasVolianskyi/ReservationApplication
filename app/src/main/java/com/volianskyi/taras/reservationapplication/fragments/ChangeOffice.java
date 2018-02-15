@@ -24,6 +24,7 @@ import java.util.zip.Inflater;
 
 public class ChangeOffice extends Fragment implements View.OnClickListener {
     View view;
+    public String name;
     DatabaseReference databaseReference;
     EditText etNameOfOption;
     EditText etPriceOfOption;
@@ -62,7 +63,7 @@ public class ChangeOffice extends Fragment implements View.OnClickListener {
         int priceOfOption = Integer.parseInt(etPriceOfOption.getText().toString());
 
         OptionsPogo optionsPogo = new OptionsPogo(id, nameOfOption, priceOfOption);
-        databaseReference.child("5").setValue(optionsPogo);
+        databaseReference.child(id).setValue(optionsPogo);
         //Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show();
     }
 }
