@@ -7,6 +7,13 @@ package com.volianskyi.taras.reservationapplication.fragments;
 public class Dialog {
     private static final Dialog ourInstance = new Dialog();
 String name;
+String login;
+
+    public Dialog(String name, String login) {
+        this.name = name;
+        this.login = login;
+    }
+
     public static Dialog getInstance() {
         return ourInstance;
     }
