@@ -24,7 +24,6 @@ import java.util.zip.Inflater;
 
 public class ChangeOffice extends Fragment implements View.OnClickListener {
     View view;
-    public String name;
     DatabaseReference databaseReference;
     EditText etNameOfOption;
     EditText etPriceOfOption;
