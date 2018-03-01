@@ -8,10 +8,30 @@ public class Dialog {
     private static final Dialog ourInstance = new Dialog();
 String name;
 String login;
+int count;
+String lastName;
 
-    public Dialog(String name, String login) {
+    public Dialog(String name, String login, int count, String lastName) {
         this.name = name;
         this.login = login;
+        this.count = count;
+        this.lastName = lastName;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getLogin() {
