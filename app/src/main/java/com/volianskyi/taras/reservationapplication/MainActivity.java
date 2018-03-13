@@ -102,19 +102,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (id == R.id.nav_online_reservation) {
             OnlineReservation onlineReservation = new OnlineReservation();
-            getSupportFragmentManager().beginTransaction().add(R.id.flMainActivity, onlineReservation, "onlineReservation").commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.flMainActivity, onlineReservation, "onlineReservation").commit();
         } else if (id == R.id.nav_about_company) {
             AboutCompany aboutCompany = new AboutCompany();
-            getSupportFragmentManager().beginTransaction().add(R.id.flMainActivity, aboutCompany, "aboutCompany").commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.flMainActivity, aboutCompany, "aboutCompany").commit();
         } else if (id == R.id.nav_my_cabinet) {
             Login login = new Login();
-            getSupportFragmentManager().beginTransaction().add(R.id.flMainActivity, login, "aboutCompany").commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.flMainActivity, login, "aboutCompany").commit();
         } else if (id == R.id.nav_change_language) {
             ChangeLanguage changeLanguage = new ChangeLanguage();
-            getSupportFragmentManager().beginTransaction().add(R.id.flMainActivity, changeLanguage, "aboutCompany").commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.flMainActivity, changeLanguage, "aboutCompany").commit();
         } else if (id == R.id.nav_change_office) {
             ChangeOffice changeOffice = new ChangeOffice();
-            getSupportFragmentManager().beginTransaction().add(R.id.flMainActivity, changeOffice, "aboutCompany").commit();
+            getSupportFragmentManager().beginTransaction().replace(R.id.flMainActivity, changeOffice, "aboutCompany").commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
