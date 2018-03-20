@@ -78,9 +78,14 @@
         <TextView
             android:id="@+id/tv_name_and_address_of_organization"
             android:layout_width="match_parent"
-
             android:layout_height="match_parent"
             android:text="@string/tv_info_name_and_address_of_organization" />
+
+        <TextView
+            android:id="@+id/tv_phone_number_of_organization"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/tv_info_phone_number_of_organization" />
 
 
     </LinearLayout>
