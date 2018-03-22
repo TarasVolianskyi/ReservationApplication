@@ -35,6 +35,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        OnlineReservation fragmentOnlineReservation = new OnlineReservation();
+        getSupportFragmentManager().beginTransaction().replace(R.id.flMainActivity, fragmentOnlineReservation, "listView").commit();
+
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
