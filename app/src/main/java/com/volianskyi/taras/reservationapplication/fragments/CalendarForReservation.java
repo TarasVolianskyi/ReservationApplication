@@ -43,7 +43,7 @@ public class CalendarForReservation /*extends AppCompatActivity*/ extends Fragme
             @Override
             public void onSelectedDayChange(CalendarView view, int year, int month,
                                             int dayOfMonth) {
-               Toast.makeText(getContext(), ""+dayOfMonth+" - "+month, 0).show();// TODO Auto-generated method stub
+               Toast.makeText(getContext(), ""+dayOfMonth+" - "+month, 0).show();
                 //Toast.makeText(, "", Toast.LENGTH_SHORT).show();
 
             }
