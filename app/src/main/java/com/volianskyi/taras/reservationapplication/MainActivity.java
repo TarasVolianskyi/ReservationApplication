@@ -120,7 +120,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             ChangeOffice changeOffice = new ChangeOffice();
             getSupportFragmentManager().beginTransaction().replace(R.id.flMainActivity, changeOffice, "aboutCompany").commit();
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
@@ -129,12 +128,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public void goToCalendar() {
         android.support.v4.app.Fragment fragment = null;
-
         fragment = new CalendarForReservation();
-
-
         getSupportFragmentManager().beginTransaction().replace(R.id.flMainActivity, fragment, "goToCalendar").commit();
-
     }
 }
 
