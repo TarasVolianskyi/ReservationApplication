@@ -1,4 +1,9 @@
 package com.volianskyi.taras.reservationapplication.fragments;
 
-public class TimeForReservation {
+import android.app.Fragment;
+
+public class TimeForReservation  extends Fragment{
+
+
+
 }
