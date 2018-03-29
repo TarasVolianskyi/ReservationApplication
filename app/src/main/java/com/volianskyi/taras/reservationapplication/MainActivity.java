@@ -131,5 +131,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         fragment = new CalendarForReservation();
         getSupportFragmentManager().beginTransaction().replace(R.id.flMainActivity, fragment, "goToCalendar").commit();
     }
+
+    @Override
+    public void goToChosingTime() {
+
+    }
+
+  /*  @Override
+    public void goToChosingTime() {
+        android.support.v4.app.Fragment fragment2 = null;
+        fragment2 = new CalendarForReservation();
+        getSupportFragmentManager().beginTransaction().replace(R.id.flMainActivity, fragment2, "goToCalendar").commit();
+    }*/
+
 }
 

@@ -6,13 +6,14 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CalendarView;
 import android.widget.Toast;
-
 import com.prolificinteractive.materialcalendarview.CalendarDay;
 import com.prolificinteractive.materialcalendarview.CalendarMode;
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
@@ -24,6 +25,11 @@ import com.volianskyi.taras.reservationapplication.R;
  */
 
 public class CalendarForReservation /*extends AppCompatActivity*/ extends Fragment implements View.OnClickListener {
+
+    public static final String TAG_CHOOSED_DAY ="tag_choosed_day";
+    public static final String TAG_CHOOSED_MONTH ="tag_choosed_month";
+    public static final String TAG_CHOOSED_YEAR ="tag_choosed_year";
+
     View view;
 
 
@@ -56,8 +62,25 @@ public class CalendarForReservation /*extends AppCompatActivity*/ extends Fragme
                 dialog.show(getFragmentManager(), Dialog.TAG_ADDING_NEW_ITEM);
                 //Toast.makeText(, "", Toast.LENGTH_SHORT).show();*/
 
+                TimeForReservation timeForReservation = new TimeForReservation();
+                Bundle bundle = new Bundle();
+                bundle.putInt(TAG_CHOOSED_DAY, dayOfMonth);
+                bundle.putInt(TAG_CHOOSED_MONTH, month);
+                bundle.putInt(TAG_CHOOSED_YEAR, year);
+                timeForReservation.setArguments(bundle);
+
+
+             /*   FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.cv_calendar_for_reservation, timeForReservation);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();*/
+
+
             }
         });
+
+
     }
 
 

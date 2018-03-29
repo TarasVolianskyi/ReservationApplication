@@ -6,4 +6,6 @@ package com.volianskyi.taras.reservationapplication.fragments;
 
 public interface FragmentsInterface {
     public void goToCalendar();
+
+    void goToChosingTime();
 }
