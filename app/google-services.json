@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "475891075679-0pv7qnu05orktht546akvgdmkscef6cr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.volianskyi.taras.reservationapplication",
+            "certificate_hash": "a7164e19bed2a997c9423baa0399add9531cc37c"
+          }
+        },
+        {
           "client_id": "475891075679-7djj3t0a6m9716ejh2o0p77e0ic333s5.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

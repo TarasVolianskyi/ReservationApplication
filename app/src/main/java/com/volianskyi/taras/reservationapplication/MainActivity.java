@@ -35,6 +35,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        OnlineReservation fragmentOnlineReservation = new OnlineReservation();
+        getSupportFragmentManager().beginTransaction().replace(R.id.flMainActivity, fragmentOnlineReservation, "listView").commit();
+
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -116,7 +120,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             ChangeOffice changeOffice = new ChangeOffice();
             getSupportFragmentManager().beginTransaction().replace(R.id.flMainActivity, changeOffice, "aboutCompany").commit();
         }
-
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
@@ -125,12 +128,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public void goToCalendar() {
         android.support.v4.app.Fragment fragment = null;
-
         fragment = new CalendarForReservation();
-
-
         getSupportFragmentManager().beginTransaction().replace(R.id.flMainActivity, fragment, "goToCalendar").commit();
+    }
+
+    @Override
+    public void goToChosingTime() {
 
     }
+
+  /*  @Override
+    public void goToChosingTime() {
+        android.support.v4.app.Fragment fragment2 = null;
+        fragment2 = new CalendarForReservation();
+        getSupportFragmentManager().beginTransaction().replace(R.id.flMainActivity, fragment2, "goToCalendar").commit();
+    }*/
+
 }
 

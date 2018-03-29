@@ -51,7 +51,6 @@ public class ChangeOffice extends Fragment implements View.OnClickListener {
                 //((MainActivity) getActivity()).goToCalendar();
                 databaseReference = FirebaseDatabase.getInstance().getReference("user_options");
                 addInfoToFB();
-
                 break;
         }
     }
