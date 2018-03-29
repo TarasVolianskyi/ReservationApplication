@@ -4,6 +4,6 @@ import android.app.Fragment;
 
 public class TimeForReservation  extends Fragment{
 
-
+private int day;
 
 }
