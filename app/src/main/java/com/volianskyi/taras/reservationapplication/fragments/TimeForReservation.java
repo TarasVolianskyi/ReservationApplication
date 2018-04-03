@@ -1,8 +1,9 @@
 package com.volianskyi.taras.reservationapplication.fragments;
 
-import android.app.Fragment;
+
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,9 +31,7 @@ public class TimeForReservation extends Fragment {
             choosedMonth = bundle.getInt(CalendarForReservation.TAG_CHOOSED_MONTH, 0);
             choosedYear = bundle.getInt(CalendarForReservation.TAG_CHOOSED_YEAR, 0);
         }
-
         initView();
-
         return view;
     }
 
@@ -41,7 +40,8 @@ public class TimeForReservation extends Fragment {
         textAlreadyChoosedDate = choosedDay+"."+choosedMonth+"."+choosedYear;
         textViewAlreadyChoosedDate.setText(textAlreadyChoosedDate);
 
-
     }
+
+
 
 }
