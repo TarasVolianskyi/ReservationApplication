@@ -8,12 +8,15 @@ import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CalendarView;
 import android.widget.Toast;
+
 import com.prolificinteractive.materialcalendarview.CalendarDay;
 import com.prolificinteractive.materialcalendarview.CalendarMode;
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
@@ -26,9 +29,9 @@ import com.volianskyi.taras.reservationapplication.R;
 
 public class CalendarForReservation /*extends AppCompatActivity*/ extends Fragment implements View.OnClickListener {
 
-    public static final String TAG_CHOOSED_DAY ="tag_choosed_day";
-    public static final String TAG_CHOOSED_MONTH ="tag_choosed_month";
-    public static final String TAG_CHOOSED_YEAR ="tag_choosed_year";
+    public static final String TAG_CHOOSED_DAY = "tag_choosed_day";
+    public static final String TAG_CHOOSED_MONTH = "tag_choosed_month";
+    public static final String TAG_CHOOSED_YEAR = "tag_choosed_year";
 
     View view;
 
@@ -70,11 +73,13 @@ public class CalendarForReservation /*extends AppCompatActivity*/ extends Fragme
                 timeForReservation.setArguments(bundle);
 
 
-             /*   FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.cv_calendar_for_reservation, timeForReservation);
+                fragmentTransaction.replace(R.id.cv_calendar_for_reservation, timeForReservation,"timeForReservation");
                 fragmentTransaction.addToBackStack(null);
-                fragmentTransaction.commit();*/
+                fragmentTransaction.commit();
+                //DrawerLayout drawer = (DrawerLayout) view.findViewById(R.id.drawer_layout);
+                //drawer.closeDrawer(GravityCompat.START);
 
 
             }
