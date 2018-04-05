@@ -30,13 +30,17 @@
 
 
         <Button
-            android:id="@+id/btnEmployeeOnlineReservationLayout"
+            android:id="@+id/btn_employee_online_reservation_layout"
             android:layout_width="match_parent"
             android:layout_height="90dp"
             android:layout_gravity="top"
             android:text="employee"
             android:textSize="30dp" />
 
+        <TextView
+            android:id="@+id/tv_chosed_employee_online_reservation_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
 
         <Button
@@ -46,7 +50,10 @@
             android:text="option"
             android:textSize="30dp" />
 
-
+        <TextView
+            android:id="@+id/tv_chosed_option_online_reservation_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/btnDateAndTimeOnlineReservationLayout"
@@ -56,8 +63,22 @@
             android:text="date and time"
             android:textSize="30dp" />
 
+        <TextView
+            android:id="@+id/tv_chosed_date_and_time_online_reservation_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btnMakeReservationOnlineReservationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_gravity="bottom"
+        android:text="Make Reservation"
+        android:textSize="30dp"
+        android:visibility="invisible" />
 
     <Space
         android:layout_width="match_parent"
@@ -67,8 +88,8 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_gravity="center_vertical"
-        android:orientation="vertical"
-        android:gravity="center">
+        android:gravity="center"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/tv_name_and_address_of_organization"

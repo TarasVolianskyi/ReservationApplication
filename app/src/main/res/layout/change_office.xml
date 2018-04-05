@@ -13,12 +13,14 @@
     <EditText
         android:id="@+id/etNameForFBCahngeOffice"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="Name (String)"/>
 
     <EditText
         android:id="@+id/etPriceForFBCahngeOffice"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="Price (int)"/>
 
     <Button
         android:id="@+id/btnConnectToFBChangeOffice"

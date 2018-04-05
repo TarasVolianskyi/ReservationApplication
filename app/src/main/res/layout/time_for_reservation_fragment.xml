@@ -29,40 +29,47 @@
                 android:text="Morning"
                 android:textSize="24dp" />
 
-            <Button
-                android:id="@+id/btn_vis_gonsdfe_morn_time_reservation_fragment"
+
+            <Switch
+                android:id="@+id/switch_vis_gone_morn_time_reservation_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="4"
-                android:layout_gravity="left"
-                android:text="vis.Gone" />
+                android:layout_gravity="center"
+                android:checked="true" />
+
+
         </TableRow>
 
-        <TableRow>
+        <TableRow android:id="@+id/rowMorn">
 
             <Button
                 android:id="@+id/btn_time_r1c1_time_reservation_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_column="1" />
+                android:layout_column="1"
+                android:text="@string/tv_time_10_00" />
 
             <Button
                 android:id="@+id/btn_time_r1c2_time_reservation_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_column="2" />
+                android:layout_column="2"
+                android:text="@string/tv_time_10_30" />
 
             <Button
                 android:id="@+id/btn_time_r1c3_time_reservation_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_column="3" />
+                android:layout_column="3"
+                android:text="@string/tv_time_11_00" />
 
             <Button
                 android:id="@+id/btn_time_r1c4_time_reservation_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_column="4" />
+                android:layout_column="4"
+                android:text="@string/tv_time_11_30" />
         </TableRow>
 
         <TableRow>
@@ -74,69 +81,77 @@
                 android:text="Day"
                 android:textSize="24dp" />
 
-            <Button
-                android:id="@+id/btn_vis_gone_day_time_reservation_fragment"
+            <Switch
+                android:id="@+id/switch_vis_gone_day_time_reservation_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="4"
-                android:layout_gravity="left"
-                android:text="vis.Gone" />
+                android:layout_gravity="center"
+                android:checked="true" />
         </TableRow>
 
-        <TableRow>
+        <TableRow android:id="@+id/rowDayFirst">
 
             <Button
                 android:id="@+id/btn_time_r2c1_time_reservation_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_column="1" />
+                android:layout_column="1"
+                android:text="@string/tv_time_12_00" />
 
             <Button
                 android:id="@+id/btn_time_r2c2_time_reservation_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_column="2" />
+                android:layout_column="2"
+                android:text="@string/tv_time_12_30" />
 
             <Button
                 android:id="@+id/btn_time_r2c3_time_reservation_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_column="3" />
+                android:layout_column="3"
+                android:text="@string/tv_time_13_00" />
 
             <Button
                 android:id="@+id/btn_time_r2c4_time_reservation_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_column="4" />
+                android:layout_column="4"
+                android:text="@string/tv_time_13_30" />
 
 
         </TableRow>
 
-        <TableRow>
+        <TableRow android:id="@+id/rowDaySecond">
 
             <Button
                 android:id="@+id/btn_time_r3c1_time_reservation_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_column="1" />
+                android:layout_column="1"
+                android:text="@string/tv_time_14_00" />
 
             <Button
                 android:id="@+id/btn_time_r3c2_time_reservation_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_column="2" />
+                android:layout_column="2"
+                android:text="@string/tv_time_14_30" />
 
             <Button
                 android:id="@+id/btn_time_r3c3_time_reservation_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_column="3" />
+                android:layout_column="3"
+                android:text="@string/tv_time_15_00" />
 
             <Button
                 android:id="@+id/btn_time_r3c4_time_reservation_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_column="4" />
+                android:layout_column="4"
+                android:text="@string/tv_time_15_30" />
 
         </TableRow>
 
@@ -150,40 +165,44 @@
                 android:text="Evening"
                 android:textSize="24dp" />
 
-            <Button
-                android:id="@+id/btn_vis_gone_even_time_reservation_fragment"
+            <Switch
+                android:id="@+id/switch_vis_gone_evening_time_reservation_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="4"
-                android:layout_gravity="left"
-                android:text="vis.Gone" />
+                android:layout_gravity="center"
+                android:checked="true" />
         </TableRow>
 
-        <TableRow>
+        <TableRow android:id="@+id/rowDayEvening">
 
             <Button
                 android:id="@+id/btn_time_r4c1_time_reservation_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_column="1" />
+                android:layout_column="1"
+                android:text="@string/tv_time_16_00" />
 
             <Button
                 android:id="@+id/btn_time_r4c2_time_reservation_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_column="2" />
+                android:layout_column="2"
+                android:text="@string/tv_time_16_30" />
 
             <Button
                 android:id="@+id/btn_time_r4c3_time_reservation_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_column="3" />
+                android:layout_column="3"
+                android:text="@string/tv_time_17_00" />
 
             <Button
                 android:id="@+id/btn_time_r4c4_time_reservation_fragment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_column="4" />
+                android:layout_column="4"
+                android:text="@string/tv_time_17_30" />
 
         </TableRow>
 
