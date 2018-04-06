@@ -86,6 +86,8 @@ public class TimeForReservation extends Fragment implements View.OnClickListener
         return view;
     }
 
+
+
     private void initView() {
         textViewAlreadyChoosedDate = (TextView) view.findViewById(R.id.tv_text_of_already_choosed_date_time_reservation_fragment);
         textAlreadyChoosedDate = choosedDay + "." + choosedMonth + "." + choosedYear;
@@ -112,15 +114,6 @@ public class TimeForReservation extends Fragment implements View.OnClickListener
         switchVisibityMorning.setOnCheckedChangeListener(this);
         switchVisibityDay.setOnCheckedChangeListener(this);
         switchVisibityEvening.setOnCheckedChangeListener(this);
-
-       // changeVisibilityOfRows(tableRowMorn, !switchVisibityMorning.isChecked());
-               /*    if(switchVisibityMorning.isChecked()){
-                tableRowMorn.setVisibility(View.GONE);
-            }else {
-                tableRowMorn.setVisibility(View.VISIBLE);
-            }
-*/
-
 
     }
 
@@ -299,12 +292,12 @@ public class TimeForReservation extends Fragment implements View.OnClickListener
             tableRowMorn.setVisibility(View.GONE);
         } else if (switchVisibityMorning.isChecked()) {
             tableRowMorn.setVisibility(View.VISIBLE);
-        }else if (!switchVisibityDay.isChecked()) {
+        } if (!switchVisibityDay.isChecked()) {
             tableRowDayFirst.setVisibility(View.GONE);
-            //tableRowDaySecond.setVisibility(View.GONE);
+            tableRowDaySecond.setVisibility(View.GONE);
         } else if (switchVisibityDay.isChecked()) {
             tableRowDayFirst.setVisibility(View.VISIBLE);
-            //tableRowDaySecond.setVisibility(View.VISIBLE);
+            tableRowDaySecond.setVisibility(View.VISIBLE);
         }if (!switchVisibityEvening.isChecked()) {
             tableRowEvening.setVisibility(View.GONE);
         } else if (switchVisibityEvening.isChecked()) {
