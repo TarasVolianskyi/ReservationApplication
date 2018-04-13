@@ -6,7 +6,8 @@
 
 
     <TextView
-        android:id="@+id/tvNameOptionsView"
+        android:id="@+id/tv_name_options_view"
+        android:textSize="24dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center|left"
@@ -14,7 +15,8 @@
         android:text="sdfsdfsdfsdfsdfsd" />
 
     <TextView
-        android:id="@+id/tvPriceOptionsView"
+        android:id="@+id/tv_price_options_view"
+        android:textSize="24dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|left"
@@ -22,7 +24,7 @@
         android:text="dfgdgfdgdgdfgdfgdg" />
 
     <ImageButton
-        android:id="@+id/ibLinkOfOptionsView"
+        android:id="@+id/ib_link_of_options_view"
         android:layout_width="50dp"
         android:layout_height="match_parent"
         android:layout_gravity="center|right"

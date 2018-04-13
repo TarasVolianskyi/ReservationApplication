@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
@@ -20,7 +21,7 @@ import java.util.Date;
  * Created by tarasvolianskyi on 29.01.18.
  */
 
-public class OnlineReservation extends Fragment implements View.OnClickListener {
+public class OnlineReservation extends Fragment implements OnClickListener {
     private View view;
     Bundle bundle;
     private Button btnEmployee;
@@ -33,11 +34,26 @@ public class OnlineReservation extends Fragment implements View.OnClickListener 
     private String employeeChosed;
     private String optionChosed;
     private String dateAndTimeChosed = "";
+    private String someVarB;
     Date date = new Date();
 
-
-
     int res = 1;
+
+    @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString("someVarB", someVarB);
+    }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        if (savedInstanceState != null) {
+
+            someVarB = savedInstanceState.getString("someVarB");
+    }}
+
+
 
     @Nullable
     @Override
@@ -68,6 +84,7 @@ public class OnlineReservation extends Fragment implements View.OnClickListener 
         tvEmployeeChosed = (TextView) view.findViewById(R.id.tv_chosed_employee_online_reservation_layout);
         tvOptionChosed = (TextView) view.findViewById(R.id.tv_chosed_option_online_reservation_layout);
         tvDateAndTimeChosed = (TextView) view.findViewById(R.id.tv_chosed_date_and_time_online_reservation_layout);
+        tvOptionChosed.setText(someVarB);
         tvDateAndTimeChosed.setText(dateAndTimeChosed);
         if (res == 2) {
             btnMakeReservation.setVisibility(View.VISIBLE);
