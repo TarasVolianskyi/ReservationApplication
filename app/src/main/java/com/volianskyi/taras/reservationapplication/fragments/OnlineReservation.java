@@ -48,8 +48,10 @@ public class OnlineReservation extends Fragment implements OnClickListener {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        someVarB = savedInstanceState.getString("someVarB");
-    }
+        if (savedInstanceState != null) {
+
+            someVarB = savedInstanceState.getString("someVarB");
+    }}
 
 
 
@@ -82,6 +84,7 @@ public class OnlineReservation extends Fragment implements OnClickListener {
         tvEmployeeChosed = (TextView) view.findViewById(R.id.tv_chosed_employee_online_reservation_layout);
         tvOptionChosed = (TextView) view.findViewById(R.id.tv_chosed_option_online_reservation_layout);
         tvDateAndTimeChosed = (TextView) view.findViewById(R.id.tv_chosed_date_and_time_online_reservation_layout);
+        tvOptionChosed.setText(someVarB);
         tvDateAndTimeChosed.setText(dateAndTimeChosed);
         if (res == 2) {
             btnMakeReservation.setVisibility(View.VISIBLE);
